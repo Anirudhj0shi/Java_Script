@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [1, 2, 3, 4, 5];
+
+        // Accessing elements
+        let firstElement = numbers[0]; // Accesses the first element (1)
+        let thirdElement = numbers[2]; // Accesses the third element (3)
+
+        // Modifying elements
+        numbers[1] = 10; // Modifies the second element to 10
+
+        // Adding elements
+        numbers.push(6); // Appends 6 to the end of the array
+        numbers.unshift(0); // Adds 0 to the beginning of the array
+
+        // Removing elements
+        numbers.pop(); // Removes the last element (6)
+        numbers.shift(); // Removes the first element (0)
+
+        // Splicing elements
+        numbers.splice(2, 1); // Removes 1 element starting from index 2
+        console.log(numbers);
+    </script>
+</body>
+</html>

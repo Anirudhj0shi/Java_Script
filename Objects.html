@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: "John Doe",
+            age: 30,
+            isAdmin: false,
+            address: 
+            {
+                street: "123 Main St",
+                city: "Anyhow",
+            }
+        };
+
+        // Accessing properties
+        let personName = person.name; // Accesses the name property ("John Doe")
+        let personAge = person['age']; // Another way to access the age property (30)
+
+        // Modifying properties
+        person.isAdmin = true; // Modifies the isAdmin property to true
+        person['address']['city'] = "New City"; // Modifies the city in the address object
+
+        // Adding new properties
+        person.email = "john@example.com"; // Adds a new email property
+        console.log(person);
+        console.log(personAge);
+        console.log(personName);
+    </script>
+</body>
+</html>
